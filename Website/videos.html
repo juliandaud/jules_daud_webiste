@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>Videos | Jules Daud</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* ESTILOS EXCLUSIVOS DE VIDEOS */
+    <!-- FOOTER -->
+<footer class="site-footer">
+
+  <div class="footer-line"></div>
+
+  <div class="footer-socials">
+
+    <a href="https://www.instagram.com/julesdaud/"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Instagram">
+      <i class="bi bi-instagram"></i>
+    </a>
+
+    <a href="https://www.youtube.com/channel/UCAIjXxr15PL6oAWZt9w_MTg"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="YouTube">
+      <i class="bi bi-youtube"></i>
+    </a>
+
+    <a href="https://open.spotify.com/artist/1tNRwa7nMv1Mn95KSxdQKI"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Spotify">
+      <i class="bi bi-spotify"></i>
+    </a>
+
+  </div>
+
+  <p>@julesdaud</p>
+
+</footer>
+
+    body {
+      background: #080808;
+      color: #f5f5f5;
+      margin: 0;
+    }
+
+    .videos-layout {
+      width: 100%;
+      max-width: 1250px;
+      margin: 0 auto;
+      padding: 75px 35px 100px;
+    }
+
+    .videos-title {
+      text-align: center;
+      margin-bottom: 55px;
+    }
+
+    .videos-title h1 {
+      font-family: "Archivo Narrow", sans-serif;
+      font-size: 60px;
+      font-weight: 500;
+      letter-spacing: 5px;
+      margin: 0;
+    }
+
+    .videos-title p {
+      margin-top: 10px;
+      color: #999;
+      font-size: 10px;
+      letter-spacing: 2px;
+    }
+
+    /* EXACTAMENTE TRES COLUMNAS */
+
+    .video-row {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 26px;
+      width: 100%;
+      align-items: start;
+    }
+
+    .video-item {
+      min-width: 0;
+      width: 100%;
+    }
+
+    .video-screen {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      background: #191919;
+      border-radius: 4px;
+    }
+
+    .video-screen iframe {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .video-item h2 {
+      font-family: "Archivo Narrow", sans-serif;
+      font-size: 19px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      margin: 16px 0 5px;
+    }
+
+    .video-item p {
+      font-size: 10px;
+      letter-spacing: 1px;
+      color: #999;
+      margin: 0;
+    }
+
+    /* STRUMMER PREVIEW */
+
+    .strummer-preview {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      width: 100%;
+      height: 100%;
+      background: #202020;
+      color: #fff;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    .strummer-preview strong {
+      font-size: 15px;
+      letter-spacing: 2px;
+    }
+
+    .play-icon {
+      background: #e52d27;
+      color: white;
+      width: 62px;
+      height: 43px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+    }
+
+    .strummer-preview:hover {
+      background: #303030;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 700px) {
+      .videos-layout {
+        padding: 50px 20px 70px;
+      }
+
+      .videos-title h1 {
+        font-size: 48px;
+      }
+
+      .video-row {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+        margin: 0 auto;
+        gap: 38px;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- MENU -->
+  <header class="header">
+    <nav class="menu">
+      <a href="index.html">HOME</a>
+      <a href="music.html">MUSIC</a>
+      <a href="videos.html">VIDEOS</a>
+      <a href="shows.html">SHOWS</a>
+      <a href="about.html">ABOUT</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+  </header>
+
+  <main class="videos-layout">
+
+    <div class="videos-title">
+      <h1>VIDEOS</h1>
+      <p>JULES DAUD / OFFICIAL VIDEOS & LIVE</p>
+    </div>
+
+    <div class="video-row">
+
+      <!-- VIDEO 1 -->
+      <article class="video-item">
+
+        <div class="video-screen">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/mZn-VbegCI4"
+            title="Jules Daud - El Dilema"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <h2>EL DILEMA</h2>
+        <p>OFFICIAL MUSIC VIDEO</p>
+
+      </article>
+
+      <!-- VIDEO 2 -->
+      <article class="video-item">
+
+        <div class="video-screen">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/srxbevxEURk"
+            title="Jules Daud - Alarma"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <h2>ALARMA</h2>
+        <p>ACOUSTIC VIDEO</p>
+
+      </article>
+
+      <!-- VIDEO 3 -->
+      <article class="video-item">
+
+        <div class="video-screen">
+          <a
+            class="strummer-preview"
+            href="https://www.youtube.com/channel/UCAIjXxr15PL6oAWZt9w_MTg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <strong>LIVE AT STRUMMER BAR</strong>
+            <div class="play-icon">▶</div>
+          </a>
+        </div>
+
+        <h2>STRUMMER BAR</h2>
+        <p>JULES DAUD & LOS PABLOS · FULL SHOW</p>
+
+      </article>
+
+    </div>
+
+  </main>
+
+</body>
+</html>
+
+

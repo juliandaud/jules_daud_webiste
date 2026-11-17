@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+        content="Jules Daud | Official Website">
+
+  <title>Jules Daud | Rock & Roll | Official Website</title>
+
+  <!-- SOCIAL MEDIA LINK PREVIEW -->
+  <meta property="og:type" content="website">
+  <meta property="og:title"
+        content="Jules Daud | Official Website">
+  <meta property="og:description"
+        content="Rock & Roll en Español | NYC">
+  <meta property="og:url"
+        content="https://julesdaud.com/">
+  <meta property="og:site_name"
+        content="Jules Daud">
+  <meta property="og:image"
+        content="https://julesdaud.com/images/logo.png">
+  <meta property="og:image:secure_url"
+        content="https://julesdaud.com/images/logo.png">
+  <meta property="og:image:type"
+        content="image/png">
+  <meta property="og:image:alt"
+        content="Jules Daud Official Logo">
+
+  <!-- TWITTER / X PREVIEW -->
+  <meta name="twitter:card"
+        content="summary_large_image">
+  <meta name="twitter:title"
+        content="Jules Daud | Official Website">
+  <meta name="twitter:description"
+        content="Rock & Roll en Español | NYC">
+  <meta name="twitter:image"
+        content="https://julesdaud.com/images/logo.png">
+
+  <!-- CANONICAL URL -->
+  <link rel="canonical"
+        href="https://julesdaud.com/">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- SOCIAL ICONS -->
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <style>
+
+    /* HOMEPAGE - NO SCROLLING */
+
+    html,
+    body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    body {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      height: 100dvh;
+      background: #080808;
+    }
+
+    /* HEADER */
+
+    body .header {
+      position: relative;
+      flex-shrink: 0;
+      width: 100%;
+      padding: 32px 20px 0;
+    }
+
+    /* CENTERED LOGO */
+
+    body .home {
+      flex: 1 1 0;
+      min-height: 0;
+      height: auto;
+      width: 100%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      padding: 15px 25px;
+      overflow: hidden;
+    }
+
+    body .main-logo {
+      display: block;
+      width: 750px;
+      max-width: 90%;
+      max-height: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    /* MINIMAL FOOTER */
+
+    body .site-footer {
+      flex-shrink: 0;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 20px 25px;
+      text-align: center;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .footer-socials {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 17px;
+    }
+
+    .footer-socials a {
+      display: inline-flex;
+      align-items: center;
+      color: #aaa;
+      font-size: 15px;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .footer-socials a:hover {
+      color: #fff;
+    }
+
+    .footer-handle {
+      margin: 0 !important;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 1.5px;
+      color: #999;
+      white-space: nowrap;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 700px) {
+
+      body .header {
+        padding: 23px 12px 0;
+      }
+
+      body .home {
+        padding: 10px 18px;
+      }
+
+      body .main-logo {
+        max-width: 95%;
+      }
+
+      body .site-footer {
+        padding-bottom: 20px;
+      }
+
+      .footer-content {
+        gap: 15px;
+      }
+
+      .footer-socials {
+        gap: 14px;
+      }
+
+      .footer-socials a {
+        font-size: 14px;
+      }
+
+      .footer-handle {
+        font-size: 10px;
+      }
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- MENU -->
+  <header class="header">
+    <nav class="menu" aria-label="Main navigation">
+      <a href="music.html">MUSIC</a>
+      <a href="videos.html">VIDEOS</a>
+      <a href="shows.html">SHOWS</a>
+      <a href="about.html">ABOUT</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+  </header>
+
+  <!-- CENTERED LOGO -->
+  <main class="home">
+    <img
+      src="images/logo.png"
+      alt="Jules Daud"
+      class="main-logo">
+  </main>
+
+  <!-- MINIMAL FOOTER -->
+  <footer class="site-footer">
+
+    <div class="footer-content">
+
+      <div class="footer-socials">
+
+        <a href="https://www.instagram.com/julesdaud/"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Instagram">
+          <i class="bi bi-instagram"></i>
+        </a>
+
+        <a href="https://www.youtube.com/channel/UCAIjXxr15PL6oAWZt9w_MTg"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="YouTube">
+          <i class="bi bi-youtube"></i>
+        </a>
+
+        <a href="https://open.spotify.com/artist/1tNRwa7nMv1Mn95KSxdQKI"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Spotify">
+          <i class="bi bi-spotify"></i>
+        </a>
+
+      </div>
+
+      <p class="footer-handle">@JULESDAUD</p>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,317 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>Shows | Jules Daud</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .shows-page {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 65px 24px 110px;
+    }
+
+    .shows-heading {
+      text-align: center;
+      margin-bottom: 55px;
+    }
+
+    .shows-heading h1 {
+      font-family: 'Archivo Narrow', sans-serif;
+      font-size: clamp(52px, 7vw, 76px);
+      font-weight: 500;
+      letter-spacing: 5px;
+    }
+
+    .shows-heading p {
+      margin-top: 10px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 10px;
+      letter-spacing: 2px;
+      color: #999;
+    }
+
+    .shows-section-title {
+      margin: 38px 0 18px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      color: #888;
+    }
+
+    .show-row {
+      display: grid;
+      grid-template-columns: 135px 1fr 95px;
+      gap: 18px;
+      align-items: center;
+      padding: 20px 4px;
+      border-bottom: 1px solid #2b2b2b;
+    }
+
+    .show-date {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 11px;
+      letter-spacing: 1px;
+      color: #aaa;
+    }
+
+    .show-venue {
+      font-family: 'Archivo Narrow', sans-serif;
+      font-size: 23px;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+
+    .show-city {
+      margin-top: 5px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 10px;
+      letter-spacing: 1px;
+      color: #999;
+    }
+
+    .show-status {
+      text-align: right;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 10px;
+      letter-spacing: 1px;
+    }
+
+    /* UPCOMING */
+
+    .show-upcoming {
+      padding: 28px 4px;
+      border-top: 1px solid #777;
+      border-bottom: 1px solid #777;
+    }
+
+    .show-upcoming .show-date,
+    .show-upcoming .show-venue {
+      color: #fff;
+    }
+
+    .show-upcoming .show-venue {
+      font-size: 30px;
+    }
+
+    .show-upcoming .show-status {
+      color: #e8e8e8;
+    }
+
+    /* PAST SHOWS */
+
+    .show-past {
+      opacity: 0.55;
+      transition: opacity 0.2s ease;
+    }
+
+    .show-past:hover {
+      opacity: 0.9;
+    }
+
+    .show-past .show-venue {
+      text-decoration: line-through;
+      text-decoration-thickness: 1px;
+      text-decoration-color: #888;
+    }
+
+    .show-past .show-status {
+      color: #777;
+    }
+
+    @media (max-width: 700px) {
+      .shows-page {
+        padding: 45px 18px 80px;
+      }
+
+      .shows-heading {
+        margin-bottom: 40px;
+      }
+
+      .show-row {
+        grid-template-columns: 85px 1fr 48px;
+        gap: 10px;
+        padding: 18px 0;
+      }
+
+      .show-date {
+        font-size: 9px;
+      }
+
+      .show-venue {
+        font-size: 18px;
+      }
+
+      .show-upcoming .show-venue {
+        font-size: 24px;
+      }
+
+      .show-city {
+        font-size: 9px;
+      }
+
+      .show-status {
+        font-size: 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="header">
+    <nav class="menu">
+      <a href="index.html">HOME</a>
+      <a href="music.html">MUSIC</a>
+      <a href="videos.html">VIDEOS</a>
+      <a href="shows.html" class="active">SHOWS</a>
+      <a href="about.html">ABOUT</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+  </header>
+
+  <main class="shows-page">
+
+    <div class="shows-heading">
+      <h1>SHOWS</h1>
+      <p>JULES DAUD / LIVE IN NEW YORK CITY</p>
+    </div>
+
+    <!-- UPCOMING SHOWS -->
+
+    <h2 class="shows-section-title">UPCOMING SHOWS</h2>
+
+    <div class="show-row show-upcoming">
+      <div class="show-date">NOV 25, 2026</div>
+
+      <div>
+        <div class="show-venue">BERLIN</div>
+        <div class="show-city">NEW YORK, NY</div>
+      </div>
+
+      <div class="show-status">UPCOMING</div>
+    </div>
+
+    <!-- PAST SHOWS -->
+
+    <h2 class="shows-section-title">PAST SHOWS</h2>
+
+    <div class="show-row show-past">
+      <div class="show-date">OCT 22, 2026</div>
+      <div>
+        <div class="show-venue">SHRINE</div>
+        <div class="show-city">HARLEM, NY</div>
+      </div>
+      <div class="show-status">PAST</div>
+    </div>
+
+    <div class="show-row show-past">
+      <div class="show-date">OCT 08, 2026</div>
+      <div>
+        <div class="show-venue">ARLENE'S GROCERY</div>
+        <div class="show-city">NEW YORK, NY</div>
+      </div>
+      <div class="show-status">PAST</div>
+    </div>
+
+    <div class="show-row show-past">
+      <div class="show-date">SEP 22, 2026</div>
+      <div>
+        <div class="show-venue">MERCURY LOUNGE</div>
+        <div class="show-city">NEW YORK, NY</div>
+      </div>
+      <div class="show-status">PAST</div>
+    </div>
+
+    <div class="show-row show-past">
+      <div class="show-date">JUL 30, 2026</div>
+      <div>
+        <div class="show-venue">BAKER FALLS</div>
+        <div class="show-city">NEW YORK, NY</div>
+      </div>
+      <div class="show-status">PAST</div>
+    </div>
+
+    <div class="show-row show-past">
+      <div class="show-date">JUL 25, 2026</div>
+      <div>
+        <div class="show-venue">CULTURE LAB LIC</div>
+        <div class="show-city">LONG ISLAND CITY, NY</div>
+      </div>
+      <div class="show-status">PAST</div>
+    </div>
+
+    <div class="show-row show-past">
+      <div class="show-date">APR 07, 2026</div>
+      <div>
+        <div class="show-venue">BAR FREDA</div>
+        <div class="show-city">RIDGEWOOD, NY</div>
+      </div>
+      <div class="show-status">PAST</div>
+    </div>
+
+    <div class="show-row show-past">
+      <div class="show-date">JAN 23, 2026</div>
+      <div>
+        <div class="show-venue">LUCILLE</div>
+        <div class="show-city">BROOKLYN, NY</div>
+      </div>
+      <div class="show-status">PAST</div>
+    </div>
+
+    <div class="show-row show-past">
+      <div class="show-date">DEC 18, 2025</div>
+      <div>
+        <div class="show-venue">ALPHAVILLE</div>
+        <div class="show-city">BROOKLYN, NY</div>
+      </div>
+      <div class="show-status">PAST</div>
+    </div>
+
+    <div class="show-row show-past">
+      <div class="show-date">OCT 29, 2025</div>
+      <div>
+        <div class="show-venue">ARLENE'S GROCERY</div>
+        <div class="show-city">NEW YORK, NY</div>
+      </div>
+      <div class="show-status">PAST</div>
+    </div>
+
+    <div class="show-row show-past">
+      <div class="show-date">OCT 12, 2025</div>
+      <div>
+        <div class="show-venue">SHRINE</div>
+        <div class="show-city">HARLEM, NY</div>
+      </div>
+      <div class="show-status">PAST</div>
+    </div>
+
+    <div class="show-row show-past">
+      <div class="show-date">JUL 03, 2025</div>
+      <div>
+        <div class="show-venue">SLEEPWALK</div>
+        <div class="show-city">BROOKLYN, NY</div>
+      </div>
+      <div class="show-status">PAST</div>
+    </div>
+
+    <div class="show-row show-past">
+      <div class="show-date">MAY 27, 2025</div>
+      <div>
+        <div class="show-venue">MERCURY LOUNGE</div>
+        <div class="show-city">NEW YORK, NY</div>
+      </div>
+      <div class="show-status">PAST</div>
+    </div>
+
+  </main>
+
+</body>
+</html>
